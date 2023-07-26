@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belanosima&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css" />
+    <style>
+        body {font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Belanosima', sans-serif;
+  background-color: black;
+  color: white;
+  border: 2px solid wheat;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 30px 100px;
+  height: 900px;
+}
+#fill {
+  text-align: center;
+  font-size: 40px;
+}
+form {
+  border: 2px solid white;
+  height: 700px;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 15px;
+}
+.name1 {
+  font-size: 40px;
+}
+.name2 {
+  margin-top: 10px;
+  width: 650px;
+  height: 25px;
+}
+.e1 {
+  font-size: 40px;
+  line-height: 2;
+}
+.e2 {
+  margin-top: 10px;
+  width: 650px;
+  height: 25px;
+}
+
+.a1 {
+  font-size: 40px;
+  line-height: 2;
+}
+.a2 {
+  margin-top: 10px;
+  width: 650px;
+  height: 25px;
+}
+.ed1{
+    font-size: 40px;
+    line-height: 2;
+}
+.ed2{
+    margin-top: 10px;
+  width: 650px;
+  height: 25px;
+}
+.p1{
+    font-size: 40px;
+    line-height: 1;
+}
+.p2{
+    margin-top: 10px;
+  width: 650px;
+  height: 25px;
+}
+    </style>
+  </head>
+
+  <body>
+    <p id="fill">Fill This Form</p>
+    <form action="action.php">
+      <label class="name1" for="name1">Name:</label>
+      <br />
+      <input
+        type="text"
+        placeholder="Enter your name"
+        id="name1"
+        class="name2"
+      />
+      <br />
+      <label class="e1" for="email">Email</label>
+      <br />
+      <input
+        type="email"
+        placeholder="Enter your email"
+        name="email"
+        id="email"
+        class="e2"
+      />
+      <label class="a1" for="age">Age</label>
+      <input
+        type="number"
+        placeholder="Enter your age"
+        name="age"
+        id="age"
+        class="a2"
+      />
+      <label for=""></label>
+      <label class="ed1" for="edu">Which option best describe you </label>
+      <br />
+      <select class="ed2" name="edu" id="">
+        <option value="stu">Student</option>
+        <option value="work">Working profestional</option>
+      </select>
+
+      <div>
+        <p class="p1">Would you recommend GeeksforGeeks <br />to a friend?</p>
+    
+        <input type="radio" name="radio" id="yes" />
+        <label for="yes">Yes</label>
+        <input type="radio" name="radio" id="no" />
+        <label for="no">No</label>
+        <input type="radio" name="radio" id="maybe" />
+        <label for="maybe">May be</label>
+      </div>
+      <div>
+        <p>Languages and Frameworks known</p>
+        <input type="checkbox" name="1" id="c" value="c" />
+        <label for="c">C</label>
+        <input type="checkbox" name="1" id="c+" value="c+" />
+        <label for="c+">C+</label>
+        <input type="checkbox" name="1" id="jawa" value="jawa" />
+        <label for="jawa">jawa</label>
+        <input type="checkbox" name="1" id="Python" value="Python" />
+        <label for="Python">Python</label>
+        <input type="checkbox" name="1" id="Angular" value="Angular" />
+        <label for="Angular">Angular</label>
+        <br>
+        <input type="submit" name="sub" id="sub" />
+      </div>
+    </form>
+  </body>
+</html>
